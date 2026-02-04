@@ -16,7 +16,7 @@
 
 | 날짜 | 주제 | 핵심 키워드 | 링크 |
 | :--- | :--- | :--- | :---: |
-| 2026.02.02 | Environment Setup | Flutter SDK 설치, 환경 변수 설정 | [Link](./01_setup.md) |
+| 2026.02.04 | Dart Syntax | Dart 기본 문법 연습(구구단, 로또, 자동차 세일) | [Link](./dart_syntax/) |
 
 ---
 
