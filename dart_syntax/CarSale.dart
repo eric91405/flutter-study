@@ -18,7 +18,8 @@ class Car {
   Car(this.maxSpeed, this.price, this.name);
 
   double saleCar() {
-    price = price * 0.9; //price를 직접 수정하지 않고 할인 가격을 계산하여 반환
+    price = price * 0.9; 
     return price;
   }
 }
+
