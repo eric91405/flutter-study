@@ -1,16 +1,31 @@
-# personalitytest
+Personality Test (심리 테스트 앱)
 
-A new Flutter project.
+주요 기능
+테스트 목록 로드: res/api/list.json 파일을 비동기(FutureBuilder)로 읽어와 메인 화면에 테스트 리스트를 구성합니다.
 
-## Getting Started
+동적 문항 생성: 각 테스트별로 구성된 개별 JSON 파일을 로드하여 질문과 선택지(Radio Button)를 동적으로 생성합니다.
 
-This project is a starting point for a Flutter application.
+분석 이벤트 추적: Firebase Analytics를 연동하여 사용자가 어떤 테스트를 클릭했는지 이벤트를 수집합니다.
 
-A few resources to get you started if this is your first Flutter project:
+결과 도출: 사용자가 선택한 답변에 매칭되는 결과를 DetailPage에서 바로 확인할 수 있습니다.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+UI/UX: Material 3 Design
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+📂 프로젝트 구조
+
+lib/
+├── main.dart              # 앱의 진입점 및 Firebase 초기화
+├── main/
+│   └── mainlist_page.dart # 심리 테스트 목록 화면
+├── sub/
+│   └── question_page.dart # 개별 테스트 질문 및 답변 선택 화면
+└── detail/
+└── detail_page.dart   # 최종 결과 확인 화면
+
+flutter run
+📝 화면 설명
+Main Page: FutureBuilder를 통해 list.json을 읽어와 카드 형태로 테스트 목록을 보여줍니다.
+
+Question Page: 사용자가 문항을 선택하면 setState를 통해 실시간으로 선택 상태를 반영하며, 선택 완료 시 결과 보기 버튼이 활성화됩니다.
+
+Detail Page: 선택한 인덱스에 맞는 성격 분석 결과와 질문 내용을 함께 표시합니다.
