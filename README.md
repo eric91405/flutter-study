@@ -17,6 +17,7 @@
 | 날짜 | 주제 | 핵심 키워드 | 링크 |
 | :--- | :--- | :--- | :---: |
 | 2026.02.04 | Dart Syntax | Dart 기본 문법 연습(구구단, 로또, 자동차 세일) | [Link](./dart_syntax/) |
+| 2026.02.05 | PersonalityTest | 심리 테스트 앱 개발 | [Link](./personalitytest/) |
 
 ---
 
